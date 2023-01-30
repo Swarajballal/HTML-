@@ -1,0 +1,211 @@
+:root
+{
+    --gray-clr: #494949;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+#wrapper
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* background-color: aqua; */
+}
+
+.container
+{
+    /* border: 1px solid var(--gray-clr); */
+    margin: 5vh auto;
+    height: 80vmax;
+    width: 60vw;
+    /* background-color: yellow;
+    border: 1px solid brown; */
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-rows: 5% 15% 30% 10% 35%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "hd hd hd"
+    "main main about"
+    "main main archives"
+    "main main else"
+    "main main sidecontent";
+}
+
+.box
+{
+    /* border: 1px solid brown;
+    background-color: lightcoral; */
+}
+
+#header
+{
+    /* background-color: yellow; */
+    /* border: 1px solid red; */
+    grid-area: hd;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+    align-items: center;
+}
+
+.sub
+{
+    color: var(--gray-clr);
+    text-decoration: underline;
+    text-decoration-color: var(--gray-clr);
+}
+
+.search
+{
+    color: var(--gray-clr);
+}
+
+#main
+{
+    grid-area: main;
+    /* height: fit-content; */
+    overflow-y: scroll;
+}
+
+#main::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.content
+{
+    width: 97%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+.date
+{
+    margin-top: -2%;
+    color: var(--gray-clr);
+}
+
+.ul-list
+{
+    margin-left: 6%;
+}
+
+.button
+{
+    margin-top: 8%;
+}
+
+.button span
+{
+    display: inline;
+    padding: 0.5em;
+    border-radius: 2rem;
+    /* background-color: springgreen; */
+}
+
+.old-btn
+{
+    color: var(--gray-clr);
+    border: 1px solid var(--gray-clr);
+}
+
+.old-btn:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: var(--gray-clr);
+    border: var(--gray-clr);
+}
+
+.new-btn
+{
+    color: blue;
+    border: 1px solid blue;
+}
+
+.new-btn:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    border: var(--gray-clr);
+}
+
+
+#about
+{
+    grid-area: about;
+    background-color: rgb(240, 238, 238);
+    overflow-y: scroll;
+}
+
+#about::-webkit-scrollbar 
+{
+    display: none;
+}
+
+#archives
+{
+    grid-area: archives;
+    overflow-y: scroll;
+}
+
+#archives::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.arch
+{
+    width: 97%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+#else
+{
+    grid-area: else;
+    overflow-y: scroll;
+}
+
+.elsewhere
+{
+    width: 97%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+#else::-webkit-scrollbar 
+{
+    display: none;
+}
+
+#sidecontent
+{
+    grid-area: sidecontent;
+}

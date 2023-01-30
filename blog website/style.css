@@ -1,0 +1,136 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container
+{
+    height: 100vh;
+    width: 60vw;
+    margin: 2vh auto;
+    /* background-color: aqua;
+    border: 1px solid brown; */
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-rows: 10vh repeat(3, 1fr)  ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "hd hd"
+    "bg1 bg2"
+    "bg3 bg4"
+    "bg5 bg6";
+}
+
+.box
+{
+    width: 100%;
+    /* background-color: yellow; */
+    justify-self: center;
+    box-shadow: 0px 0px 0px 3px rgb(229, 226, 226);
+}
+
+#header
+{
+    /* background-color: yellow; */
+    /* border: 1px solid red; */
+    grid-area: hd;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+    align-items: center;
+}
+
+.sub
+{
+    color: darkgrey;
+    text-decoration: underline;
+    text-decoration-color: darkgrey;
+}
+
+.search
+{
+    color: darkgrey;
+}
+
+.content
+{
+    /* background-color: royalblue; */
+    height: 75%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content h3
+{
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.h3-head1
+{
+    color: green;
+}
+
+.h3-head
+{
+    color: blue;
+}
+
+.desc
+{
+    margin-top: 2%;
+}
+
+.continue
+{
+    /* background-color: rebeccapurple; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.continue a
+{
+    text-decoration: underline;
+    color: blue;
+}
+
+#blog1
+{
+    grid-area: bg1;
+}
+
+#blog2
+{
+    grid-area: bg2;
+}
+
+#blog3
+{
+    grid-area: bg3;
+}
+
+#blog4
+{
+    grid-area: bg4;
+}
+
+#blog5
+{
+    grid-area: bg5;
+}
+
+#blog6
+{
+    grid-area: bg6;
+}
+
+
