@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Flex:opsz@8..144&display=swap');
+
+:root
+{
+    --main-color:#4E5DC0;
+    --navbar-content-color:#777C85;
+
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#wrapper
+{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container
+{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.navbar
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav-items
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.teampage
+{
+    color: var(--main-color);
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+a
+{
+    text-decoration: none;
+    color:  var(--navbar-content-color);
+    font-weight: 600;
+}
+
+.strt-prj-btn
+{
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: var(--main-color);
+    align-self: center;
+    border-radius: 0.5em;
+}
+
+.strt-prj-btn a
+{
+    color: white;
+}
+
+.mid-section
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem auto;
+    gap: 12rem;
+}
+
+.mid-section-left
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 5rem;
+    gap: 4rem;
+    font-size: 1.2rem;
+}
+
+.mid-section-left-head 
+{
+    width: fit-content;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 2.2rem;
+    color:black;
+    border-color: #00000080;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.bottom-section
+{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin: 12rem auto;
+    gap: 19rem;
+}
+
+.bottom-section-right 
+{
+    width: 32%;
+}
+
+.footer
+{
+    height: 50vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -6rem;
+    border-top: 1px solid var(--navbar-content-color);
+}
+
+.footer-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 90%;
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: blueviolet; */
+    font-family: 'Raleway';
+}
+
+.footer-containers-div
+{
+    height: 80%;
+    width: 22%;
+    /* background-color: aqua; */
+}
+
+.logo
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-container-head
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--main-color);
+    letter-spacing: 0.18em;
+}
+
+.footer-container-content
+{
+    color: var(--navbar-content-color);
+}
+
+.footer-privacy
+{
+    text-decoration: underline;
+}
+
+.footer-containers-div-center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--navbar-content-color);
+}
+
+.footer-containers-div-third
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.menu-items
+{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu-items div a
+{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.aboutus
+{
+    color: var(--main-color);
+}
+
+.icons-div
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.icons-container
+{
+    width: fit-content;
+    background-color: var(--main-color);
+    padding: 1.1em 1.3em 1.1em 1.3em;
+    border-radius: 100%;
+    justify-items: baseline;
+}
