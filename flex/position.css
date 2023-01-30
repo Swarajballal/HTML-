@@ -1,0 +1,61 @@
+*
+{
+    /* box-sizing: border-box;  total size of content + border remain same so content will become a bit small and adjust border in it and same box size */
+}
+.container
+{
+    margin: 100px;
+    height: 500px;
+    width: 500px;
+    border: 2px solid green;
+    background-image: url(sky.png);
+    background-size: cover;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap;  default no-wrap */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: wrap-reverse; */
+    /* justify-content: flex-start;  all with respect to main axis */
+    /* justify-content: space-between;  along main axis */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* align-items: baseline;  all line height of all element is same irrespective of font size */
+    /* align-items: flex-end; */
+    /* align-items: center;   center from a x axis y axis */
+    /* align-items: flex-start; */
+    /* align-items: stretch;  default value */
+    /* gap: 10px;  space between elements its a shorthand elements doesnt apply to extreme position elements like cards */
+    /* align-content: flex-start; align at start in equal row with no space */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+}
+
+.box
+{
+    /* border: 1px solid brown; */
+    /* background-color: palevioletred; */
+    /* width: 100px; */
+    /* flex-grow: 1;  all take equal width */
+    /* flex-shrink: 4; shrinking speed of box or element */
+    /* flex-basis: 100px; width for elements in the flex makes it responses */
+    /* flex: ;  4 values of all  order grow shrink basis */
+}
+
+#box1
+{
+    /* order: 1;  give element a class or id and give order 1 or 2 it will shift position according to order as position  */
+    /* flex-grow: 1;  can be given to each element */
+    /* align-self: stretch; will stretch the particular box */
+}
+
+#box2
+{
+    /* order: 2; */
+}
